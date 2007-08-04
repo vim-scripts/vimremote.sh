@@ -1,0 +1,16 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1980
+
+I wanted to use vim from the Xilinx ide, and I like the following actions to occur from the IDE
+
+
+1) open every file in a split window in one gvim session
+2) when opening the same file again from the IDE, don't cause a new split window if there is already one
+3) use the line numbers provided by the ide.
+
+In Xilinx you would define the external editor call 
+
+/path/to/vimremote.sh XILINX $1 $2
+
+The XILINX is just a name so that one particular gvim session is used for it, and not any others you might have hanging around
+
+You need a decent shell. Don't know how that works in Windows. This script could be useful in many other ide's that allow calls to external editors
